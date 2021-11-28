@@ -76,3 +76,76 @@ td{
 caption{
   background-color:#00FFFF;
 }
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  left:5%;
+  background-color: rgba(0,0,0, 0.8);
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.493);
+  padding: 8px 0;
+  width : 400px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  
+  background-color: #C9C0BB;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.dropdown:hover .dropdown-content {
+ 
+  display: block;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color:black;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.493);
+  color: #fff;
+}
+
+.dropbtn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.493);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+
+  width: 450px;
+  height: 55px; 
+}
+ .hungarian
+{ 
+     width:1030px;
+     height: 300px; 
+     padding: 30px 30px 30px 30px;
+     margin: 10px 10px 10px 10px;
+     display: flex; 
+     justify-content: flex-end;
+ } 

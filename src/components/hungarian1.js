@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './table.css';
 import Process from "./process";
 import Calculation from "./calculation";
-class Hungarian extends Component {
+class Hungarianmin extends Component {
   
   render() {
      
@@ -158,4 +158,4 @@ class Hungarian extends Component {
   }
 }
 
-export default Hungarian;
+export default Hungarianmin;

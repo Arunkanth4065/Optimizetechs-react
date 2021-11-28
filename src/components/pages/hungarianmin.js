@@ -2,7 +2,7 @@ import React from 'react';
 import './table.css';
 import Process from "./process";
 import Calculation from "./calculation";
-const Hungarian = () => {
+const Hungarianmin = () => {
     const [count, setCount] = React.useState(0);
     
     const components = [
@@ -164,18 +164,18 @@ const Hungarian = () => {
                 <th scope="row"  >Row1</th>
                 <td style={{color:"white"}}>0</td>
                 <td style={{color:"white"}}>0</td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>1</td>
+                <td style={{backgroundColor:"yellow",color:"red"}}>255</td>
               </tr>
               <tr >
                 <th scope="row">Row2</th>
-                <td style={{backgroundColor:"yellow",color:"red"}}>1</td>
+                <td style={{backgroundColor:"yellow",color:"red"}}>114</td>
                 <td style={{color:"white"}}>0</td>
                 <td style={{color:"white"}}>0</td>
               </tr>
               <tr>
                 <th scope="row" >Row3</th>
                 <td style={{color:"white"}}>0</td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>1</td>
+                <td style={{backgroundColor:"yellow",color:"red"}}>684</td>
                 <td style={{color:"white"}}>0</td>
               </tr>
             </tbody>
@@ -205,9 +205,9 @@ const Hungarian = () => {
         {/* show previous button if we are not on first element */}
         {count > 0 && <button className="previous" onClick={() => setCount(count - 1)}>&laquo; Previous</button>}
         
-        {/* hide next button if we are at the last element */}
+        {/* hide hungarianmax button if we are at the last element */}
         {count < components.length - 1 && <button className="next" onClick={() => setCount(count + 1)}>Next &raquo;</button>}
         </div>
     </div>
 }
-export default Hungarian
+export default Hungarianmin

@@ -41,7 +41,7 @@ function App() {
   //                   </NavLink>
   //                 </li>
   //                 <li className="nav-item">
-  //                   <NavLink className="nav-link" to="/components/pages/hungarian">
+  //                   <NavLink className="nav-link" to="/components/pages/hungarianmin">
   //                     About
   //                   </NavLink>
   //                 </li>
