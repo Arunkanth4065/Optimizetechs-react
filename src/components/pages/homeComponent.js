@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import { Link ,Nav,NavDropdown} from 'react-router-dom';
-import { Dropdown , DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import MenuItem from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import './table.css';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 class HomeComponent extends Component {
     render () {
         return (
@@ -40,7 +38,7 @@ class HomeComponent extends Component {
             <div className="dropdown-content">
            <Link to='/hungarianmin' activeStyle><a> Assignment Problem(for Minimum)</a></Link>
            <Link to='/hungarianmax' activeStyle><a>Assignment Problem(for Maximum)</a></Link>
-          <Link to='/homecomponent' activeStyle><a>Assignment Problem( for M not equals to N)</a></Link>
+          <Link to='/hungarianrc' activeStyle><a>Assignment Problem( for M not equals to N)</a></Link>
             </div>
             
             </div>

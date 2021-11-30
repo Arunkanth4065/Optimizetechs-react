@@ -2,6 +2,7 @@ import React from 'react';
 import './table.css';
 import Process from "./process";
 import Calculation from "./calculation";
+
 const Hungarianmin = () => {
     const [count, setCount] = React.useState(0);
     
@@ -10,7 +11,7 @@ const Hungarianmin = () => {
         <div className="table1" >
         <h2>STEP-1:</h2>
           <table class="table table-bordered table-dark" style={{ width: 500 ,fontSize:30}}>
-
+                 
               <thead>
                 <tr>
                   <th>ROW/COL</th>
@@ -20,10 +21,11 @@ const Hungarianmin = () => {
                 </tr>
               </thead>
               <tbody>
+
                 <tr>
                   <th scope="row">Row1</th>
-                  <td className="cell">523</td>
-                  <td>769</td>
+                  <td >523</td>
+                  <td >769</td>
                   <td>255</td>
                 </tr>
                 <tr>
@@ -70,21 +72,21 @@ const Hungarianmin = () => {
             <tbody>
               <tr>
                 <th scope="row">Row1</th>
-                <td style={{color:"red"}}>268</td>
-                <td>514</td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>0</td>
+                <td class="CellWithComment" style={{color:"red"}}>268<span class="CellComment">523-255</span></td>
+                <td class="CellWithComment">514<span class="CellComment">769-255</span></td>
+                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0<span class="CellComment">255-255</span></td>
               </tr>
               <tr>
                 <th scope="row">Row2</th>
-                <td style={{backgroundColor:"yellow",color:"red"}}>0</td>
-                <td>364</td>
-                <td style={{color:"red"}}>783</td>
+                <td style={{backgroundColor:"yellow",color:"red"}}class="CellWithComment">0<span class="CellComment">114-114</span></td>
+                <td class="CellWithComment">364<span class="CellComment">478-114</span></td>
+                <td style={{color:"red"}} class="CellWithComment">783<span class="CellComment">897-114</span></td>
               </tr>
               <tr>
                 <th scope="row">Row3</th>
-                <td style={{color:"red"}}>606</td>
-                <td>345</td>
-                <td style={{color:"red"}}>0</td>
+                <td style={{color:"red"}} class="CellWithComment">606<span class="CellComment">942-336</span></td>
+                <td  class="CellWithComment">345<span class="CellComment">681-336</span></td>
+                <td style={{color:"red"}} class="CellWithComment">0<span class="CellComment">336-336</span></td>
               </tr>
             </tbody>
           </table>
@@ -116,21 +118,21 @@ const Hungarianmin = () => {
             <tbody>
               <tr>
                 <th scope="row"  >Row1</th>
-                <td style={{color:"red"}}>268</td>
-                <td style={{color:"red"}}>169</td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>0</td>
+                <td style={{color:"red"}} class="CellWithComment">268</td>
+                <td style={{color:"red"}} class="CellWithComment">169<span class="CellComment">514-345</span></td>
+                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0</td>
               </tr>
               <tr >
                 <th scope="row">Row2</th>
-                <td style={{backgroundColor:"yellow",color:"red"}}>0</td>
-                <td style={{color:"red"}}>19</td>
-                <td style={{color:"red"}}>783</td>
+                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0</td>
+                <td style={{color:"red"}} class="CellWithComment">19<span class="CellComment">364-345</span></td>
+                <td style={{color:"red"}} class="CellWithComment">783</td>
               </tr>
               <tr>
                 <th scope="row" >Row3</th>
-                <td style={{color:"red"}}>606</td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>0</td>
-                <td style={{color:"red"}}>0</td>
+                <td style={{color:"red"}} class="CellWithComment">606</td>
+                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0<span class="CellComment">345-345</span></td>
+                <td style={{color:"red"}} class="CellWithComment">0</td>
               </tr>
             </tbody>
           </table>
@@ -162,21 +164,21 @@ const Hungarianmin = () => {
             <tbody>
               <tr>
                 <th scope="row"  >Row1</th>
-                <td style={{color:"white"}}>0</td>
-                <td style={{color:"white"}}>0</td>
+                <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">523</span></td>
+                <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">769</span></td>
                 <td style={{backgroundColor:"yellow",color:"red"}}>255</td>
               </tr>
               <tr >
                 <th scope="row">Row2</th>
                 <td style={{backgroundColor:"yellow",color:"red"}}>114</td>
-                <td style={{color:"white"}}>0</td>
-                <td style={{color:"white"}}>0</td>
+                <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">478</span></td>
+                <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">897</span></td>
               </tr>
               <tr>
                 <th scope="row" >Row3</th>
-                <td style={{color:"white"}}>0</td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>684</td>
-                <td style={{color:"white"}}>0</td>
+                <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">942</span></td>
+                <td style={{backgroundColor:"yellow",color:"red"}} >681</td>
+                <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">336</span></td>
               </tr>
             </tbody>
           </table>

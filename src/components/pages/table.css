@@ -149,3 +149,29 @@ caption{
      display: flex; 
      justify-content: flex-end;
  } 
+ .CellWithComment{
+  position:relative;
+}
+
+.CellComment{
+  display:none;
+  position:absolute; 
+  z-index:100;
+  border:1px;
+  font-size: 26px;
+  width: 160px;
+  color:white;
+  background-color: #1b1b1b;
+  text-align: center;
+  border-radius: 25px;
+  opacity: 1.0;
+}
+
+.CellWithComment:hover span.CellComment{
+  display:block;
+}
+.vl {
+  border-left: 6px solid green;
+  height:100px;
+  margin-left: 50%;
+}
