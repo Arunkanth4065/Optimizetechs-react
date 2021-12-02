@@ -108,28 +108,28 @@ const Hungarianmax = () => {
             <thead>
               <tr>
                 <th >ROW/COL</th>
-                <th scope="col" style={{color:"red"}}>Column1</th>
-                <th scope="col" style={{color:"red"}}>Column2</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column1</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column2</th>
                 <th scope="col" >Column3</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row" class="CellWithComment">Row1</th>
-                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0<span class="CellComment">0-0</span></td>
-                <td style={{color:"red"}} class="CellWithComment">261<span class="CellComment">261-0</span></td>
+                <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}} class="CellWithComment">0<span class="CellComment">0-0</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">261<span class="CellComment">261-0</span></td>
                 <td class="CellWithComment">606<span class="CellComment">606-0</span></td>
               </tr>
               <tr >
                 <th scope="row">Row2</th>
-                <td style={{color:"red"}} class="CellWithComment">246<span class="CellComment">419-173</span></td>
-                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0<span class="CellComment">173-173</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">246<span class="CellComment">419-173</span></td>
+                <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}} class="CellWithComment">0<span class="CellComment">173-173</span></td>
                 <td class="CellWithComment">514<span class="CellComment">687-173</span></td>
               </tr>
               <tr>
                 <th scope="row" class="CellWithComment">Row3</th>
-                <td style={{color:"red"}} class="CellWithComment">364<span class="CellComment">828-464</span></td>
-                <td style={{color:"red"}} class="CellWithComment">0<span class="CellComment">464-464</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">364<span class="CellComment">828-464</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">0<span class="CellComment">464-464</span></td>
                 <td class="CellWithComment">223<span class="CellComment">687-464</span></td>
               </tr>
             </tbody>
@@ -154,29 +154,29 @@ const Hungarianmax = () => {
             <thead>
               <tr>
                 <th>ROW/COL</th>
-                <th scope="col" style={{color:"red"}}>Column1</th>
-                <th scope="col" style={{color:"red"}}>Column2</th>
-                <th scope="col" style={{color:"red"}}>Column3</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column1</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column2</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column3</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row"  >Row1</th>
-                <td style={{backgroundColor:"yellow",color:"red"}}>0</td>
-                <td style={{color:"red"}}>261</td>
-                <td style={{color:"red"}} class="CellWithComment">383<span class="CellComment">606-223</span></td>
+                <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}}>0</td>
+                <td style={{color:"#FF3300"}}>261</td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">383<span class="CellComment">606-223</span></td>
               </tr>
               <tr >
                 <th scope="row">Row2</th>
-                <td style={{color:"red"}}>246</td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>0</td>
-                <td style={{color:"red"}} class="CellWithComment">291<span class="CellComment">514-223</span></td>
+                <td style={{color:"#FF3300"}}>246</td>
+                <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}}>0</td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">291<span class="CellComment">514-223</span></td>
               </tr>
               <tr>
                 <th scope="row" >Row3</th>
-                <td style={{color:"red"}}>364</td>
-                <td style={{color:"red"}}>0</td>
-                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0<span class="CellComment">223-223</span></td>
+                <td style={{color:"#FF3300"}}>364</td>
+                <td style={{color:"#FF3300"}}>0</td>
+                <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}} class="CellWithComment">0<span class="CellComment">223-223</span></td>
               </tr>
             </tbody>
           </table>
@@ -208,39 +208,39 @@ const Hungarianmax = () => {
       <tbody>
         <tr>
           <th scope="row"  >Row1</th>
-          <td style={{backgroundColor:"yellow",color:"red"}} >942</td>
+          <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}} >942</td>
           <td class="CellWithComment">0<span class="CellComment">681</span></td>
           <td class="CellWithComment">0<span class="CellComment">336</span></td>
         </tr>
         <tr >
           <th scope="row">Row2</th>
           <td class="CellWithComment">0<span class="CellComment">523</span></td>
-          <td style={{backgroundColor:"yellow",color:"red"}}>769</td>
+          <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}}>769</td>
           <td class="CellWithComment">0<span class="CellComment">255</span></td>
         </tr>
         <tr>
           <th scope="row" >Row3</th>
           <td class="CellWithComment">0<span class="CellComment">114</span></td>
           <td class="CellWithComment">0<span class="CellComment">478</span></td>
-          <td style={{backgroundColor:"yellow",color:"red"}}>255</td>
+          <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}}>255</td>
         </tr>
       </tbody>
     </table>
     </div>
     <div>
-    <Calculation name="Minimum Values
-                       319
-                       413
-                       213 
+    <Calculation name="maximization cost of given problem is 942+769+255=1966/-
                         "/>
   </div>
     <div>
-    <Process  name= "Identify the minimum element in each row and subtract it from every element of that row. The result is shown in the following table." />
+    <Process  name= "Given matrix is Otimized by using hungarian method" />
     </div>
   </div>
 ]
 
     return <div>
+      
+      
+      <h3>Maximization of Assignment Problem</h3>
        <div>
         {
             // render component from our components array

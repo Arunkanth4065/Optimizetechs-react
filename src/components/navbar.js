@@ -21,7 +21,7 @@ return (
 		<div className="hungarianbtn">
 		<Link to='/homecomponent' activeStyle>
 		<button className="button2">
-			homecomponent
+			Assignment Problem
 		</button>
 		</Link>
 		</div>

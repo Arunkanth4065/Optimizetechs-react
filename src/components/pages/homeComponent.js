@@ -32,7 +32,20 @@ class HomeComponent extends Component {
             //         </div>
             //     </div>
             // </div>
-           <div className="hungarian">
+           <div>
+               
+               <div className="home"> 
+              
+        <div className="home1">  <h3>Assignment Problem(By Hungarian Method)</h3>
+        <p>Assignment problem is a special type of lpp in which the objective is to find the optimum alloaction of a number tasks (or) job to an equal number of facilities(persons)</p>
+        <p>An assignment problem can be easily solved by applying Hungarian method which consists of two phases. In the first phase, row reductions and column reductions are carried out. In the second phase, the solution is optimized on iterative basis.</p>
+
+
+          <p>An Assignment problem can be started in the form of m*n matrix[c(i,j)] called cost (or) effectiveness matrix where c(i,j) is the cost of assigning ith facility(person to the jth job</p>
+          <p>Assignment models used are are given as follows....</p>
+          </div>
+        </div>
+        <div className="hungarian">
             <div className="dropdown">
             <button  className="dropbtn">Assignment Problem (By Hungarian Method)</button>
             <div className="dropdown-content">
@@ -43,7 +56,7 @@ class HomeComponent extends Component {
             
             </div>
             </div>
-        
+            </div>
         )
     }
    

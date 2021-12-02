@@ -6,14 +6,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 //import {FontAwesomeIcon,faCaretDown,faCaretUp,faUser,faBookmark,faArchive,faCog} from 'react-navbar-dropdown';
-import NavbarPage from './navbarpage';
 import MainComponent from './components/mainComponent';
 function App() {
   return (
     <div>
         
           <div className="container-fluid">
-           <h2 style={{color:"#00FFFF"}}>Visualise the Optimize Technique</h2>
+           <h1>Visualization of Optimization Techniques</h1>
           </div>
           
           

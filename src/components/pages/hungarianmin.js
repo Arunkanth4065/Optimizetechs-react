@@ -51,7 +51,7 @@ const Hungarianmin = () => {
                               "/>
         </div>
         <div className="process1">
-          <Process name= "Identify the minimum element in each row and subtract it from every element of that row. The result is shown in the following table. For each row or column with a single zero value cell that has not be assigned or eliminated, box that zero value as an assigned cell. For every zero that becomes assigned, cross out (X) all other zeros in the same row and the same column. If for a row and a column, there are two or more zeros and one cannot be chosen by inspection, choose the cell arbitrarily for assignment. The above process may be continued until every zero cell is either assigned or crossed (X)." />
+          <Process name= "Reduce the matrix by selecting the smallest element in each row and subtract with other elements in that row.Take any row or column which has a single zero and assign by squaring it. Strike off the remaining zeros, if any, in that row and column (X). Repeat the process until all the assignments have been made." />
           </div>
         </div>,
           <div class="grid-container">
@@ -64,42 +64,39 @@ const Hungarianmin = () => {
             <thead>
               <tr>
                 <th>ROW/COL</th>
-                <th scope="col" style={{color:"red"}}>Column1</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column1</th>
                 <th scope="col">Column2</th>
-                <th scope="col" style={{color:"red"}}>Column3</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column3</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">Row1</th>
-                <td class="CellWithComment" style={{color:"red"}}>268<span class="CellComment">523-255</span></td>
+                <td class="CellWithComment" style={{color:"#FF3300"}}>268<span class="CellComment">523-255</span></td>
                 <td class="CellWithComment">514<span class="CellComment">769-255</span></td>
-                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0<span class="CellComment">255-255</span></td>
+                <td style={{backgroundColor:"#F2AA4cFF",color:"#FF3300"}} class="CellWithComment">0<span class="CellComment">255-255</span></td>
               </tr>
               <tr>
                 <th scope="row">Row2</th>
-                <td style={{backgroundColor:"yellow",color:"red"}}class="CellWithComment">0<span class="CellComment">114-114</span></td>
+                <td style={{backgroundColor:"#F2AA4cFF",color:"#FF3300"}}class="CellWithComment">0<span class="CellComment">114-114</span></td>
                 <td class="CellWithComment">364<span class="CellComment">478-114</span></td>
-                <td style={{color:"red"}} class="CellWithComment">783<span class="CellComment">897-114</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">783<span class="CellComment">897-114</span></td>
               </tr>
               <tr>
                 <th scope="row">Row3</th>
-                <td style={{color:"red"}} class="CellWithComment">606<span class="CellComment">942-336</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">606<span class="CellComment">942-336</span></td>
                 <td  class="CellWithComment">345<span class="CellComment">681-336</span></td>
-                <td style={{color:"red"}} class="CellWithComment">0<span class="CellComment">336-336</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">0<span class="CellComment">336-336</span></td>
               </tr>
             </tbody>
           </table>
           </div>
           <div>
-          <Calculation name="Minimum Values
-                             319
-                             413
-                             213 
+          <Calculation name="After marking all rows and columns small value is 345
                               "/>
         </div>
           <div>
-          <Process name= "Draw the minimum number of vertical and horizontal lines necessary to cover all the zeros in the reduced matrix obtained from step 3. Select the smallest element from all the uncovered elements. Subtract this smallest element from all the uncovered elements and add it to the elements, which lie at the intersection of two lines. Thus, we obtain another reduced matrix for fresh assignment. Repeat Step 3 to Step 6 this process until total assignments(N)=number of rows/columns." />
+          <Process name= "Select the smallest element of the whole matrix, which is NOT COVERED by lines. Subtract this smallest element with all other remaining elements that are NOT COVERED by lines and add the element at the intersection of lines. Leave the elements covered by single line as it is. " />
           </div>
         </div>,
         <div class="grid-container">
@@ -110,42 +107,39 @@ const Hungarianmin = () => {
             <thead>
               <tr>
                 <th>ROW/COL</th>
-                <th scope="col" style={{color:"red"}}>Column1</th>
-                <th scope="col" style={{color:"red"}}>Column2</th>
-                <th scope="col" style={{color:"red"}}>Column3</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column1</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column2</th>
+                <th scope="col" style={{color:"#FF3300"}}>Column3</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row"  >Row1</th>
-                <td style={{color:"red"}} class="CellWithComment">268</td>
-                <td style={{color:"red"}} class="CellWithComment">169<span class="CellComment">514-345</span></td>
-                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0</td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">268</td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">169<span class="CellComment">514-345</span></td>
+                <td style={{backgroundColor:"#F2AA4cFF",color:"#FF3300"}} class="CellWithComment">0</td>
               </tr>
               <tr >
                 <th scope="row">Row2</th>
-                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0</td>
-                <td style={{color:"red"}} class="CellWithComment">19<span class="CellComment">364-345</span></td>
-                <td style={{color:"red"}} class="CellWithComment">783</td>
+                <td style={{backgroundColor:"#F2AA4cFF",color:"#FF3300"}} class="CellWithComment">0</td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">19<span class="CellComment">364-345</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">783</td>
               </tr>
               <tr>
                 <th scope="row" >Row3</th>
-                <td style={{color:"red"}} class="CellWithComment">606</td>
-                <td style={{backgroundColor:"yellow",color:"red"}} class="CellWithComment">0<span class="CellComment">345-345</span></td>
-                <td style={{color:"red"}} class="CellWithComment">0</td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">606</td>
+                <td style={{backgroundColor:"#F2AA4CFF",color:"#FF3300"}} class="CellWithComment">0<span class="CellComment">345-345</span></td>
+                <td style={{color:"#FF3300"}} class="CellWithComment">0</td>
               </tr>
             </tbody>
           </table>
           </div>
           <div>
-          <Calculation name="Minimum Values
-                             319
-                             413
-                             213 
+          <Calculation name="Given marix is optimized.
                               "/>
         </div>
           <div>
-          <Process  name= "Identify the minimum element in each row and subtract it from every element of that row. The result is shown in the following table." />
+          <Process  name= "Number of lines drawn = order of matrix, then optimally is reached.Take any row or column which has a single zero and assign by squaring it. Strike off the remaining zeros, if any, in that row and column (X). Repeat the process until all the assignments have been made" />
           </div>
         </div>,
         <div class="grid-container">
@@ -166,37 +160,35 @@ const Hungarianmin = () => {
                 <th scope="row"  >Row1</th>
                 <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">523</span></td>
                 <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">769</span></td>
-                <td style={{backgroundColor:"yellow",color:"red"}}>255</td>
+                <td style={{backgroundColor:"#F2AA4cFF",color:"#FF3300"}}>255</td>
               </tr>
               <tr >
                 <th scope="row">Row2</th>
-                <td style={{backgroundColor:"yellow",color:"red"}}>114</td>
+                <td style={{backgroundColor:"#F2AA4cFF",color:"#FF3300"}}>114</td>
                 <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">478</span></td>
                 <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">897</span></td>
               </tr>
               <tr>
                 <th scope="row" >Row3</th>
                 <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">942</span></td>
-                <td style={{backgroundColor:"yellow",color:"red"}} >681</td>
+                <td style={{backgroundColor:"#F2AA4cFF",color:"#FF3300"}} >681</td>
                 <td style={{color:"white"}} class="CellWithComment">0<span class="CellComment">336</span></td>
               </tr>
             </tbody>
           </table>
           </div>
           <div>
-          <Calculation name="Minimum Values
-                             319
-                             413
-                             213 
+          <Calculation name="Minimization Cost of given matrix is 255+114+681=1050
                               "/>
         </div>
           <div>
-          <Process  name= "Identify the minimum element in each row and subtract it from every element of that row. The result is shown in the following table." />
+          <Process  name= "Now given Assignment Problem is optimized by hungarian method" />
           </div>
         </div>
     ]
 
     return <div>
+      <h3>Minimization of Assignment Problem</h3>
        <div>
         {
             // render component from our components array

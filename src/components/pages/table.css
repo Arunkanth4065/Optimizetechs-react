@@ -81,9 +81,11 @@ caption{
 .dropdown {
   position: relative;
   display: inline-block;
+  font-family: 'Roboto', sans-serif;
 }
 
 .dropdown-content {
+  
   display: none;
   position: relative;
   left:5%;
@@ -103,6 +105,7 @@ caption{
   padding: 8px 16px;
   text-decoration: none;
   display: block;
+  
 }
 
 .dropdown-content a:hover {
@@ -140,9 +143,18 @@ caption{
   width: 450px;
   height: 55px; 
 }
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size:40px;
+}
  .hungarian
 { 
-     width:1030px;
+     width:1170px;
      height: 300px; 
      padding: 30px 30px 30px 30px;
      margin: 10px 10px 10px 10px;
@@ -174,4 +186,15 @@ caption{
   border-left: 6px solid green;
   height:100px;
   margin-left: 50%;
+}
+
+
+h3 {
+  font: bold 40px arial, sans-serif;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
 }
